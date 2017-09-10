@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TelefonRehberiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Calisan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AdSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Telefon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DepartmanID" Type="Int32" Nullable="false" />
+    <Property Name="IsManager" Type="Boolean" Nullable="false" />
+    <Property Name="IsAdmin" Type="Boolean" Nullable="false" />
+    <Property Name="Yoneticisi" Type="Int32" />
+    <NavigationProperty Name="Calisan1" Relationship="Self.FK_Calisan_Calisan" FromRole="Calisan" ToRole="Calisan1" />
+    <NavigationProperty Name="Calisan2" Relationship="Self.FK_Calisan_Calisan" FromRole="Calisan1" ToRole="Calisan" />
+    <NavigationProperty Name="Departman" Relationship="Self.FK_Calisan_Departman" FromRole="Calisan" ToRole="Departman" />
+    <NavigationProperty Name="KullaniciBilgisi" Relationship="Self.FK_KullaniciBilgisi_Calisan" FromRole="Calisan" ToRole="KullaniciBilgisi" />
+  </EntityType>
+  <EntityType Name="Departman">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DepartmanAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Calisan" Relationship="Self.FK_Calisan_Departman" FromRole="Departman" ToRole="Calisan" />
+  </EntityType>
+  <EntityType Name="KullaniciBilgisi">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KullaniciAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CalisanID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Calisan" Relationship="Self.FK_KullaniciBilgisi_Calisan" FromRole="KullaniciBilgisi" ToRole="Calisan" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_Calisan_Calisan">
+    <End Role="Calisan" Type="Self.Calisan" Multiplicity="0..1" />
+    <End Role="Calisan1" Type="Self.Calisan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Calisan">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Calisan1">
+        <PropertyRef Name="Yoneticisi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Calisan_Departman">
+    <End Role="Departman" Type="Self.Departman" Multiplicity="1" />
+    <End Role="Calisan" Type="Self.Calisan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departman">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Calisan">
+        <PropertyRef Name="DepartmanID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KullaniciBilgisi_Calisan">
+    <End Role="Calisan" Type="Self.Calisan" Multiplicity="1" />
+    <End Role="KullaniciBilgisi" Type="Self.KullaniciBilgisi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Calisan">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="KullaniciBilgisi">
+        <PropertyRef Name="CalisanID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TelefonRehberiEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Calisan" EntityType="Self.Calisan" />
+    <EntitySet Name="Departman" EntityType="Self.Departman" />
+    <EntitySet Name="KullaniciBilgisi" EntityType="Self.KullaniciBilgisi" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <AssociationSet Name="FK_Calisan_Calisan" Association="Self.FK_Calisan_Calisan">
+      <End Role="Calisan" EntitySet="Calisan" />
+      <End Role="Calisan1" EntitySet="Calisan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Calisan_Departman" Association="Self.FK_Calisan_Departman">
+      <End Role="Departman" EntitySet="Departman" />
+      <End Role="Calisan" EntitySet="Calisan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KullaniciBilgisi_Calisan" Association="Self.FK_KullaniciBilgisi_Calisan">
+      <End Role="Calisan" EntitySet="Calisan" />
+      <End Role="KullaniciBilgisi" EntitySet="KullaniciBilgisi" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

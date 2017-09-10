@@ -1,0 +1,100 @@
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\ApplicationInsights.config
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\roslyn\csc.exe
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\roslyn\vbc.exe
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\roslyn\VBCSCompiler.exe
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\TelefonReheri.dll.config
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\TelefonReheri.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\TelefonReheri.pdb
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\EntityFramework.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\EntityFramework.SqlServer.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\Microsoft.AI.Web.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\Microsoft.ApplicationInsights.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\System.Web.Helpers.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\System.Web.Mvc.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\System.Web.Razor.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\System.Web.Webpages.Deployment.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\System.Web.Webpages.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\System.Web.Webpages.Razor.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\EntityFramework.xml
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\EntityFramework.SqlServer.xml
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\Microsoft.AI.Web.xml
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\Microsoft.ApplicationInsights.xml
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\System.Web.Razor.xml
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\System.Web.Webpages.xml
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\System.Web.Webpages.Deployment.xml
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\System.Web.Webpages.Razor.xml
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\System.Web.Helpers.xml
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\bin\System.Web.Mvc.xml
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\obj\Debug\TelefonReheri.csprojResolveAssemblyReference.cache
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\obj\Debug\TelefonReheri.dll
+C:\Users\onur.sisoglu\documents\visual studio 2015\Projects\TelefonReheri\TelefonReheri\obj\Debug\TelefonReheri.pdb
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\ApplicationInsights.config
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\roslyn\csc.exe
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\roslyn\System.Collections.Immutable.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\roslyn\System.Reflection.Metadata.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\roslyn\vbc.exe
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\roslyn\VBCSCompiler.exe
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\roslyn\VBCSCompiler.exe.config
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\TelefonReheri.dll.config
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\TelefonReheri.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\TelefonReheri.pdb
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\EntityFramework.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\EntityFramework.SqlServer.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\Microsoft.AI.Agent.Intercept.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\Microsoft.AI.DependencyCollector.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\Microsoft.AI.Web.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\Microsoft.AI.WindowsServer.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\Microsoft.ApplicationInsights.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\Microsoft.Web.Infrastructure.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\System.Web.Helpers.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\System.Web.Mvc.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\System.Web.Razor.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\System.Web.Webpages.Deployment.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\System.Web.Webpages.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\System.Web.Webpages.Razor.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\EntityFramework.xml
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\EntityFramework.SqlServer.xml
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\Microsoft.AI.DependencyCollector.xml
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\Microsoft.AI.Web.xml
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\Microsoft.AI.WindowsServer.xml
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\Microsoft.ApplicationInsights.xml
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\System.Web.Razor.xml
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\System.Web.Webpages.xml
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\System.Web.Webpages.Deployment.xml
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\System.Web.Webpages.Razor.xml
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\System.Web.Helpers.xml
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\bin\System.Web.Mvc.xml
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\obj\Debug\TelefonReheri.csprojResolveAssemblyReference.cache
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\obj\Debug\TelefonReheri.dll
+D:\KursCalismalari\TelefonReheri\TelefonReheri\TelefonReheri\obj\Debug\TelefonReheri.pdb

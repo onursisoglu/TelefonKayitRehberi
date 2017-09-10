@@ -1,0 +1,99 @@
+﻿@model Admin_DuzenleVM
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Duzenle</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-4 col-md-4 col-lg-4 col-lg-offset-4">
+                <form method="post">
+                    <input type="hidden" name="hdnID" value="@Model.Calisan.ID" />
+                    <div class="form-group">
+                        <label>Ad Soyad :</label>
+                        <input class="form-control" type="text" name="txtAd" value="@Model.Calisan.AdSoyad" />
+                    </div>
+                    <div class="form-group">
+                        <label>Telefon :</label>
+                        <input class="form-control" type="text" name="txtTelefon" value="@Model.Calisan.Telefon" />
+                    </div>
+                    <div class="form-group">
+                        <label>Departman :</label>
+                        <select class="form-control" name="Departman">
+                            <option>Seçiniz</option>
+                            @foreach (Departman item in Model.Departmanlar)
+                            {
+                                if (Model.Calisan.Departman == item)
+                                {
+                                    <option value="@item.ID" selected="selected">@item.DepartmanAdi</option>
+                                }
+                                else
+                                {
+                                    <option value="@item.ID">@item.DepartmanAdi</option>
+                                }
+
+
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Yönetici Statüsü :</label>
+                        <select class="form-control" name="Statu">
+                            <option>Seçiniz</option>
+                            @if (Model.Calisan.IsManager)
+                            {
+                                <option value="true" selected="selected">Yönetici</option>
+                                <option value="false"> Çalışan </option>
+                            }
+                            else
+                            {
+                                <option value="true">Yönetici</option>
+                                <option value="false" selected="selected"> Çalışan </option>
+                            }
+
+
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Yöneticisi :</label>
+                        <select class="form-control" name="Yoneticisi">
+                            <option>Seçiniz</option>
+                            @foreach (Calisan item in Model.Calisanlar.Where(x => x.IsManager == true).ToList())
+                            {
+                                if (Model.Calisan.Calisan2 != null)
+                                {
+                                    if (Model.Calisan.Calisan2.ID == item.ID)
+                                    {
+                                        <option value="@item.ID" selected="selected">@item.AdSoyad</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@item.ID">@item.AdSoyad</option>
+                                    }
+                                }
+                                else
+                                {
+                                    <option value="@item.ID">@item.AdSoyad</option>
+                                }
+
+
+
+                            }
+                        </select>
+                    </div>
+                    <input type="submit" class="btn btn btn-block btn-success" value="Bilgileri Güncelle" />
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+﻿@model AdminUI_IndexVM
+@{
+    Layout = "~/Views/Shared/View.cshtml";
+}
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-4 col-md-4 col-lg-4 col-lg-offset-4">
+               
+                <form action="@Url.Action("Index","AdminUI")" method="post">
+                    
+                    <div class="form-group">
+                        <label>Ad Soyad :</label>
+                        <input class="form-control" type="text" name="txtAd" />
+                    </div>
+                    <div class="form-group">
+                        <label>Telefon :</label>
+                        <input class="form-control" type="text" name="txtTelefon" />
+                    </div>
+                    <div class="form-group">
+                        <label>Departman :</label>
+                        <select class="form-control" name="Departman">
+                            <option>Seçiniz</option>
+                            @foreach (Departman item in Model.Departmanlar)
+                            {
+                                <option value="@item.ID">@item.DepartmanAdi</option>
+
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Yönetici Statüsü :</label>
+                        <select class="form-control" name="Statu">
+                            <option>Seçiniz</option>
+                            <option value="true">Yönetici</option>
+                            <option value="false">Çalışan</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Yöneticisi :</label>
+                        <select class="form-control" name="Yoneticisi">
+                            <option>Seçiniz</option>
+                            @foreach (Calisan item in Model.Calisanlar.Where(x => x.IsManager == true).ToList())
+                            {
+                                <option value="@item.ID">@item.AdSoyad</option>
+                            }
+                        </select>
+                    </div>
+                    <input type="submit" class="btn btn btn-block btn-success" value="Çalışan Ekle" />
+                </form>
+            </div>
+        </div>
+
+
+        <div style="margin-top:50px;" class="row">
+
+            <table class="table table-bordered">
+                <tr>
+                    <td class="text-center text-uppercase" colspan="6"><b>Çalışan Listesi</b>
+                    
+                        <form method="post" action="/AdminUI/Ara" class="input-group pull-right ">
+                            <input class="form-control" type="text" name="metin" value="" placeholder="Search..." />
+                            <div class="input-group-btn">
+                                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                            </div>
+                        </form>
+                    
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <th>Adı Soyadı</th>
+                    <th>Telefon</th>
+                    <th>Departmanı</th>
+                    <th>Statüsü</th>
+                    <th>Yöneticisi</th>
+                    <th>İşlemler</th>
+                </tr>
+                @foreach (Calisan item in Model.Calisanlar)
+                {
+                    <tr>
+                        <td>@item.AdSoyad</td>
+                        <td>@item.Telefon</td>
+                        <td>@item.Departman.DepartmanAdi</td>
+                        @if (item.IsManager)
+                        {
+                            <td>Yönetici</td>
+                        }
+                        else
+                        {
+
+                            <td>Yönetici Değil</td>
+                        }
+                        @if (item.Yoneticisi == null)
+                        {
+                            <td>Yok</td>
+                        }
+                        else
+                        {
+                             <td>@item.Calisan2.AdSoyad</td>
+                        }
+                        <td><a href="@Url.Action("Duzenle","AdminUI", new { id = item.ID })">Düzenle</a>
+                            <a href="/AdminUI/Sil?KID=@item.ID">Sil</a>
+                        </td>
+                        
+                    </tr>
+                }
+            </table>
+
+        </div>
+
+
+    </div>

@@ -1,0 +1,44 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container"> 
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-lg-offset-4">
+                <h1 class="text-center text-primary"><i><b>Login</b></i></h1>
+                <hr />
+                <form action="@Url.Action("Index","Home")"method="post">
+                    <div class="form-group">
+                        <label>Kullanıcı Adı :</label>
+                        <input class="form-control" type="text" name="txtKullaniciAdi"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Şifre :</label>
+                        <input class="form-control" type="text" name="txtSifre" />
+                    </div>
+                    <input class="btn btn-success btn-block" type="submit" value="Giriş Yap"/>
+                </form>
+
+                @if (Session["uyari"] != null)
+                {
+                    <div class="alert alert-danger">@Session["uyari"].ToString()</div>
+                }
+
+            </div>
+
+            
+
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container"> 
+        <div class="row">
+            <table class="table table-bordered">
+                <tr>
+                    <td class="text-center text-primary text-uppercase" colspan="6"><b>Çalışan Listesi</b></td>
+                </tr>
+                <tr class="text-primary">
+                    <th>Adı Soyadı</th>
+                    <th>Telefon</th>
+                    <th>Departmanı</th>
+                    <th>Statüsü</th>
+                    <th>Yöneticisi</th>
+                </tr>
+                @foreach (Calisan item in Model.Calisanlar)
+                {
+                    <tr class="text-info">
+                        <td>@item.AdSoyad</td>
+                        <td>@item.Telefon</td>
+                        <td>@item.Departman.DepartmanAdi</td>
+                        @if (item.IsManager)
+                        {
+                            <td>Yönetici</td>
+                        }
+                        else
+                        {
+
+                            <td>Yönetici Değil</td>
+                        }
+                        @if (item.Yoneticisi == null)
+                        {
+                            <td>Yok</td>
+                        }
+                        else
+                        {
+                            <td>@item.Calisan2.AdSoyad</td>
+                        }
+
+                    </tr>
+                }
+            </table>
+
+        </div>
+    </div>
+</body>
+</html>
